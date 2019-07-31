@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html>
+	<style>
+	
+  body.style{
+  margin:0;
+  
+  background-color:Tomato;
+  background-repeat: no-repeat;
+  
+  height:162;
+  margin: auto;
+   
+  padding: 10px;
+
+  }
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color:black;
+  size: 50%;
+  padding-top: 0px;
+  width: 200%;
+    
+}
+
+  .footer {
+       list-style-type: none;
+    overflow: hidden;
+    background-color:black;
+  align:left;
+  size: 50%;
+  width: 600%;
+  height: 600px;
+  
+}
+
+li {
+    float: left;
+    font-family:"agency fb";
+   font-size: large;
+}
+
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: left;
+  font-size:"30%"; 
+    padding: 25px 25px;
+  width: 80%;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  font-color: red;
+}
+
+.active {
+   font-style: bold;
+}
+
+
+li1 {
+    float: left;
+    font-family:"agency fb";
+   font-size: large;
+}
+
+li1 a {
+    display: block;
+    color: white;
+    text-align: left;
+  font-size:"50%"; 
+    padding: 25px 25px;
+  width: 80%;
+    text-decoration: none;
+}
+
+li1 a:hover:not(.active) {
+    background-color: #111; 
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+  .right {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  border: 3px solid black;
+  font-family:"agency fb";
+  font-size: 64;
+   background-color: #ff0000;
+  opacity: 0.6;
+  padding: 5px;
+}
+  h1{
+  font-family:'caviar_dreamsregular';
+  color:black;
+  font-size: 300%;
+    width: 50%;
+  padding: 0px;
+  text-align: left;
+  }
+  
+  h2{
+  font-family:'caviar_dreamsregular';
+  color:black;
+  font-size: 12;
+    width: 50%;
+  padding: 0px;
+  text-align: left;
+  }
+  
+  h3{
+  font-family:'caviar_dreamsregular';
+  color:white;
+  align: center;
+  font-size: 200;
+    width: 50%;
+  padding: 0px;
+  text-align: left;
+  }
+  
+  h4{
+  font-family:'caviar_dreamsregular';
+  color:white;
+  align: left;
+  font-size: 200;
+    width: 50%;
+  padding: 0px;
+  text-align: left;
+  }
+  
+  h5{
+  font-family:'caviar_dreamsregular';
+  color:white;
+  align: left;
+  font-size: 200;
+    width: 50%;
+  padding: 0px;
+  text-align: left;
+  }
+
+
+
+</style>
+
+
+<header>
+  <nav>
+     <ul>
+      <li><a href="ullala_home.html">Order your Cake</a></li> <!--Solution -->
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href="pricing.html"></a></li>
+    </ul>
+  </nav>
+</header>
+
+<head>
+<!--meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--bootstrap css-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--bootstrap js-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <script src="code.js"> </script>
+
+<body class="style">
+
+  <div style="background:transparent !important" class="jumbotron">
+  <h1 class="display-4">Order your cake</h1>
+    <p class="lead">Reach out to us for queries.</p>
+  </header>
+</div>
+
+<script>
+
+function validateForm() {
+  var sname = document.forms["Parentsportal"]["sname"].value;
+  var regnum = document.forms["Parentsportal"]["regnum"].value;
+  var fname = document.forms["Parentsportal"]["fname"].value
+  var fnum = document.forms["Parentsportal"]["fnum"].value
+  var mailid = document.forms["Parentsportal"]["mailid"].value;
+      
+      
+  var sname = document.forms["Parentsportal"]["sname"].value;
+  if (sname == "") {
+    alert("Hey yo! looks like you didnt enter the necessary field.");
+    return false;
+  }
+  
+  var regnum = document.forms["Parentsportal"]["regnum"].value;
+  if (regnum == "") {
+    alert("Hey yo! looks like you didnt enter the necessary field.");
+    return false;
+  }
+  
+  var fname = document.forms["Parentsportal"]["fname"].value;
+  if (fname == "") {
+    alert("Hey yo! looks like you didnt enter the necessary field.");
+    return false;
+  }
+  
+   var hostel = document.forms["Parentsportal"]["hostel"].value;
+  if (hostel == "") {
+    alert("Hey yo! looks like you didnt enter the necessary field.");
+    return false;
+  }
+  
+  var fnum = document.forms["Parentsportal"]["fnum"].value;
+  if (fnum == "") {
+    alert("Hey yo! looks like you didnt enter the necessary field.");
+    return false;
+  }
+  
+  var mailid = document.forms["Parentsportal"]["mailid"].value;
+  if (mailid == "") {
+    alert("Hey yo! looks like you didnt enter the necessary field.");
+    return false;
+  }
+}
+
+
+</script>
+
+<body class="style">
+<h1> </h1>
+
+<div class="row">
+
+<form name="Parentsportal" action="index.html" method'"post" onsubmit="return validateForm();">
+<label for="name">Name:</label>
+<input type="text" id="sname" name=""></br></br>
+
+<form name="Parentsportal" action="index.html" method'"post" onsubmit="return validateForm();">
+<label for="name">Contact number:</label>
+<input type="number" id="regnum" name=""></br></br>
+
+<form name="Parentsportal" action="index.html" method'"post" onsubmit="return validateForm();">
+<label for="name">Address to deliver:</label>
+<input type="text" id="fname" name=""></br></br>
+
+<form name="Parentsportal" action="index.html" method'"post" onsubmit="return validateForm();">
+<label for="name">City:</label>
+<input type="text" id="city" name=""></br></br>
+
+<form name="Parentsportal" action="index.html" method'"post" onsubmit="return validateForm();">
+<label for="number"> Message to write on the cake:</label>
+<input type="text" id="fnum" number=""></br></br>
+
+<form name="Parentsportal" action="index.html" method'"post" onsubmit="return validateForm();">
+<label for="email"> Mail Id:</label>
+<input type="email" id="mailid" email=""></br></br>
+
+</div>
+<button onclick="index.html"> Next </button>
+
+</body>
+</head>
+</html>
